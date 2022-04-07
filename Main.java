@@ -16,7 +16,7 @@ public class Main {
                 max = c;
             }
         }
-        System.out.printf("Длина минимально слова равна %d символа(ов)\nЭти слова: \n", max);
+        System.out.printf("Длина минимально слова равна %d символа(ов)\nСлово(а): \n", max);
         for(String t : words){
             if(t.length() == max){
                 result = t;
