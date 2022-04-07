@@ -8,17 +8,17 @@ public class Main {
         String result = "";;
         System.out.print("Введите предложение: ");
         String word = in.nextLine();
-        int max = word.length();
+        int min = word.length();
         String[] words = word.split(" ");
         for(String t : words){
             int c = t.length();
-            if(c < max){
-                max = c;
+            if(c < min){
+                min = c;
             }
         }
-        System.out.printf("Длина минимально слова равна %d символа(ов)\nСлово(а): \n", max);
+        System.out.printf("Длина минимально слова равна %d символа(ов)\nСлово(а): \n", min);
         for(String t : words){
-            if(t.length() == max){
+            if(t.length() == min){
                 result = t;
                 System.out.println(result);
             }
